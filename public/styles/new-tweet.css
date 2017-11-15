@@ -1,0 +1,24 @@
+h2 {
+  border: 1px solid;
+  padding: 5px auto;
+}
+
+.new-tweet {
+  position: relative;
+  margin: 0px auto 1em auto;
+}
+
+textarea {
+  width: 100%;
+  margin: 0;
+}
+
+input {
+  position: left;
+  vertical-align: bottom;
+}
+
+.counter {
+  position: right; 
+  vertical-align: bottom;
+}
