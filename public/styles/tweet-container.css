@@ -1,0 +1,63 @@
+article.tweet {
+  border-radius: 0.5em;
+  border: 1px solid black;
+  line-height: 16px;
+}
+
+article.tweet header {
+  border-radius: 0.5em 0.5em 0 0;
+  padding: 0.5em;
+  background-color: lightgrey;
+}
+
+.profile-picture {
+  border-radius: 0.5em;
+  width: 50px;
+  height: 50px;
+}
+
+.name {
+  font-size: 1.5em;
+  font-weight: bold;
+  vertical-align: top;
+  line-height: 1.5em;
+  margin-left: 0.5em;
+}
+
+.userName {
+  float: right;
+  font-size: 14px;
+  color: #657786;
+}
+
+.user-tweet {
+  margin: 0;
+  padding: 2em 0.5em 2em 0.5em;
+  
+}
+
+.time-line {
+  border-radius: 1em;
+  border: 1px solid black;
+  height: 15px;
+}
+
+footer {
+  padding: 0.5em;
+  border-top: 1px solid black
+}
+
+article.tweet:hover .icons {
+  float: right;
+  margin-right: .5em;
+  color: #00a087 ;
+  visibility: visible;
+}
+
+
+article.tweet .icons {
+  float: right;
+  margin-right: .5em;
+  color: #00a087 ;
+  visibility: hidden;
+}
