@@ -1,9 +1,13 @@
-var maxLength = 140;
-$('textarea').keyup(function() {
-  var length = $(this).val().length;
-  var length = maxLength-length;
-  $('#chars').text(length);
+
+$(function() {
+  $('.new-tweet textarea').on('input', function() {
+    let length = $(this).val().length;
+    $(this).parent().find('.counter').text(140-length);
+    if(length > 140) {
+      $(this).parent().find('.counter').css('color', 'red');
+    } else {
+      $(this).parent().find('.counter').css('color', 'black');
+    }
+  });
 });
 
-//Find text area (inside function)
-//When its value cahnges I'm going to update the counter
