@@ -7,7 +7,7 @@
   width: 100%;
   font: #e8fdff;
   padding-left: 15px;
-  padding-right: 15px
+  padding-right: 15px;
 }
 
 #nav-bar .logo {
@@ -23,3 +23,13 @@
   font-size: 30px;
   padding-left: 10px;
 }
+
+#nav-bar .compose {
+  border-color: black solid;;
+  float: right;
+  font-size: 1.25em;
+  color: #00a087;
+  height: 60px;
+  width: 100px;
+}
+
