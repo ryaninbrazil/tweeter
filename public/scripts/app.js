@@ -45,9 +45,11 @@ $(function() {
 		let data = $(this).serialize();
 		let tweetContent = $("#tweet-content").val();
 			if (tweetContent === "" || tweetContent === null) {
-					alert("Hey your tweet is empty, please insert a message!");
+				$('.empty-tweet').css( { display: 'block' } );
+				$('.too-many-chars').css( { display: 'none' } );
 			} else if (tweetContent.length > 140) {
-					alert("Hey you have exceeded the maximum characters allowed, please use less than 140!");
+				$('.empty-tweet').css( { display: 'none' } );
+				$('.too-many-chars').css( { display: 'block' } );
 			} else {
 			$.ajax({
 				method: 'post',
@@ -56,6 +58,7 @@ $(function() {
 			}).done(function (data) {
 				theForm.reset();
 				loadTweets();
+				$('#tweet-form p').css({ display: "none" });
 			});
 			return false;
 		}

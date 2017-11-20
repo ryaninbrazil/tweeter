@@ -2,6 +2,7 @@ article.tweet {
   border-radius: 0.5em;
   border: 1px solid black;
   line-height: 16px;
+  margin-bottom: 10px;
 }
 
 article.tweet header {
@@ -45,6 +46,10 @@ article.tweet header {
 footer {
   padding: 0.5em;
   border-top: 1px solid black
+}
+
+article.tweet {
+  overflow-wrap: break-word;  
 }
 
 article.tweet:hover .icons {

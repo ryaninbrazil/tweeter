@@ -8,6 +8,7 @@
   font: #e8fdff;
   padding-left: 15px;
   padding-right: 15px;
+  z-index: 1000;
 }
 
 #nav-bar .logo {

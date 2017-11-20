@@ -16,7 +16,6 @@ h2 {
 
 #wrapper {
   position: relative;
-  overflow: hidden;
   margin: 0;
   padding: 0;
 }
@@ -36,5 +35,15 @@ textarea {
 input {
   position: left;
   vertical-align: bottom;
+}
+
+.empty-tweet {
+  display: none;
+  color: red;
+}
+
+.too-many-chars {
+  display: none;
+  color: red;
 }
 
