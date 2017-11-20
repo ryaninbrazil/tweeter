@@ -41,7 +41,7 @@ $(function() {
  
 	$('#tweet-form').on('submit', function (event) { 
 		event.preventDefault();
-		lettheForm = this;
+		let theForm = this;
 		let data = $(this).serialize();
 		let tweetContent = $("#tweet-content").val();
 			if (tweetContent === "" || tweetContent === null) {
@@ -53,7 +53,7 @@ $(function() {
 				method: 'post',
 				url: '/tweets',
 				data: data
-			}).done(function () {
+			}).done(function (data) {
 				theForm.reset();
 				loadTweets();
 			});
