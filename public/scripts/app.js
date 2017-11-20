@@ -59,6 +59,7 @@ $(function() {
 				theForm.reset();
 				loadTweets();
 				$('#tweet-form p').css({ display: "none" });
+				$('.counter').text(140);
 			});
 			return false;
 		}
